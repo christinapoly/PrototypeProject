@@ -14,7 +14,7 @@
     
     <div id="main_links">
         <div class="row">
-            <a href="map.php">
+            <a href="map.html">
                 <div id="map" class="main_link">map</div>
             </a>
             <a href="contacts.php">
