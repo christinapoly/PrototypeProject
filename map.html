@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Map of Ravnsbjerg Kollegiet</title>
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+<link href="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
+<link rel="stylesheet" href="map.css">
+
+
+  <div id="map"></div>
+
+  <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoicG9seXpvZ29wIiwiYSI6ImNsb2RleXlndzA3N20yam12b2Y1YWJheDEifQ.lr19uXoW-aPJmyhslL_TcA';
+          
+      
+      //add the map to #map in the HTML
+      const map = new mapboxgl.Map({
+          container: 'map',
+          style: 'mapbox://styles/mapbox/outdoors-v12',
+          center: [10.14982331946688, 56.11970884512265],
+          zoom: 18
+      });
+
+      const geojson = {
+  type: 'FeatureCollection',
+  features: [
+    {
+      type: 'Feature',
+      geometry: {
+        type: 'Point',
+        coordinates: [10.150375435048906, 56.119609015095094]
+      },
+      properties: {
+        id: 'bar',
+        title: 'Bar',
+        description: 'Opening Hours: <br> Thu 21.00 - 05.00 <br> Sat 22.00 - 05.00',
+        image: 'images\bar.jpg',
+      }
+    },
+    {
+      type: 'Feature',
+      geometry: {
+        type: 'Point',
+        coordinates: [10.150364706212008, 56.11948939675405]
+      },
+      properties: {
+        id: 'sauna',
+        title: 'Sauna',
+        description: 'Opening Hours: <br> 12.00 - 20.00, everyday'
+      }
+    },
+    {
+      type: 'Feature',
+      geometry: {
+        type: 'Point',
+        coordinates: [ 10.149322713993332, 56.11935986008917]
+      },
+      properties: {
+        id:'gym',
+        title: 'Gym',
+        description: 'Opening Hours: <br> 07.00-22.00, everyday'
+      }
+    },
+    {
+      type: 'Feature',
+      geometry: {
+        type: 'Point',
+        coordinates: [10.149742447898475, 56.120330815394276]
+      },
+      properties: {
+        id: 'boardgame',
+        title: 'Board Game Room',
+        description: 'Opening Hours:<br> 19.00-00.00, every Tuesday'
+      }
+    },
+    {
+      type: 'Feature',
+      geometry: {
+        type: 'Point',
+        coordinates: [10.150559135778442, 56.11929693159023]
+      },
+      properties: {
+        id: 'music',
+        title: 'Music Room',
+        description: 'Opening Hours:<br> 19.00-00.00, every Tuesday'
+      }
+    },
+    {
+      type: 'Feature',
+      geometry: {
+        type: 'Point',
+        coordinates: [10.149936680523282, 56.11971631352814]
+      },
+      properties: {
+        id: 'current',
+        title: 'You are here!',
+        description: ''
+      }
+    },
+  ]
+};
+
+// add markers to map
+for (const feature of geojson.features) {
+  // create a HTML element for each feature
+  const el = document.createElement('div');
+  const customClass = `marker-${feature.properties.id}`;
+  el.className = `${customClass}`;
+
+  // make a marker for each feature and add to the map
+  new mapboxgl.Marker(el)
+  .setLngLat(feature.geometry.coordinates)
+
+  .setPopup(
+    new mapboxgl.Popup({ offset: 25 }) // add popups
+      .setHTML(
+        `<h3>${feature.properties.title}</h3><p>${feature.properties.description}</p>`
+      )
+  )
+  
+  .addTo(map);
+}
+
+  </script>
+
+    
+
+</body>
+</html>
