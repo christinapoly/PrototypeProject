@@ -1,11 +1,8 @@
-body{
+body {
     margin: 0;
-    height: 100vh;
-}
-
-/* BRICK BACKGROUND */
-.brick_bcgr {
-    background-image: url(images/brick_bcgr.jpg);
+    height: 1080px;
+    width: 1920px;
+    background-image: url(images/brick_white.jpg);
     background-repeat: no-repeat;
     position: fixed;
     background-size: cover;
@@ -13,58 +10,81 @@ body{
 
 /* COLORS */
 :root {
-    --div-bg-color: rgba(100,87,85, 0.7);
+    --div-bg-color: rgba(100, 87, 85, 0.7);
 }
 
+/* HEADER */
+#header {
+    height: 100px;
+    width: 1920px;
+    display: flex;
+    justify-content: space-between;
+}
 
-/* main page */
-#main_links{
+#back_arrow {
+    width: 100px;
+    height: 70px;
+    font-size: 50px;
+    color: black;
+    text-align: center;
+    border-radius: 20px;
+    background-color: lightgray;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#back_arrow a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+    top: 3px;
+    left: -2px;
+}
+
+/* MAIN PAGE */
+#main_links {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-items: center;
 }
-.row{
+
+.row {
     display: flex;
     justify-content: center;
 }
+
 .main_link {
-    width: 300px;
-    height: 200px;
-    background-color: gray;
+    width: 500px;
+    height: 350px;
+    background-color: var(--div-bg-color);
     padding: 30px;
     margin: 20px;
-    border-radius: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 40px;
 }
 
-/* events page */
+/* EVENTS */
 div.scrollmenu {
     background-color: #333;
     overflow: auto;
     white-space: nowrap;
-  }
-  
-  div.scrollmenu a {
+}
+
+div.scrollmenu a {
     display: inline-block;
     color: white;
     text-align: center;
     padding: 50px;
     text-decoration: none;
-  }
-  
-  div.scrollmenu a:hover {
-    background-color: #777;
-  }
-  
-
-/* header */
-#header{
-    background-color: gray;
-    height: 50px;
 }
 
+div.scrollmenu a:hover {
+    background-color: #777;
+}
 
-/* Facilities Page */
+/* FACILITIES*/
 
 #title_div {
     color: white;
@@ -77,17 +97,18 @@ div.scrollmenu {
     margin-right: 40%;
     margin-top: 3%;
     text-align: center;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1.3rem;
-    
+
 }
 
 
-#boxes1, #boxes2 {
+#boxes1,
+#boxes2 {
     display: flex;
     flex-wrap: nowrap;
     gap: 8%;
-    margin: 3%;   
+    margin: 3%;
 }
 
 
@@ -95,7 +116,7 @@ div.scrollmenu {
     width: 75%;
     height: 70%;
     align-items: center;
-    padding-top: 7%;  
+    padding-top: 7%;
 }
 
 
@@ -104,7 +125,7 @@ div.scrollmenu {
     text-align: center;
     justify-items: center;
     font-size: 1.6rem;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .box {

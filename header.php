@@ -11,8 +11,10 @@
 
 <body>
     <div id="header">
-        header
-        <a href="index.php">back to main</a>
+        <div id="back_arrow">
+            <a href="#"><</a>
+        </div>
+
     </div>
 </body>
 

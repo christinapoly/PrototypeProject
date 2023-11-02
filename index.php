@@ -11,6 +11,7 @@
 
 <body>
     <?php include("header.php"); ?>
+    
     <div id="main_links">
         <div class="row">
             <a href="map.php">
@@ -21,7 +22,7 @@
             </a>
         </div>
         <div class="row">
-            <a href="facilities.php">
+            <a href="facilities-main.html">
                 <div id="facilities" class="main_link">facilities</div>
             </a>
             <a href="events.php">
