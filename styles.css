@@ -132,3 +132,9 @@ div.scrollmenu a:hover {
     text-align: center;
     border-radius: 40px;
 }
+
+/* CONTACT */
+
+#title_contact {
+    color: red;
+}
