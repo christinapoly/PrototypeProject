@@ -10,7 +10,8 @@ body {
 
 /* COLORS */
 :root {
-    --div-bg-color: rgba(100, 87, 85, 0.7);
+    --buttons-color: rgba(100, 87, 85, 0.7);
+    --page-titles-and-background: rgba(135,126,124);
 }
 
 /* HEADER */
@@ -87,51 +88,60 @@ div.scrollmenu a:hover {
 /* FACILITIES*/
 
 #title_div {
-    color: white;
-    padding: 0.05%;
-    background-color: var(--div-bg-color);
-    border-radius: 40px;
-    margin-left: 40%;
-    margin-right: 40%;
-    margin-top: 3%;
+    color: var(--page-titles-and-background);
+    margin-top: 4%;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.3rem;
+    font-size: 2rem;
 }
-
-
-#boxes1,
-#boxes2 {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 8%;
-    margin: 3%;
-}
-
-
-.img {
-    width: 75%;
-    height: 70%;
-    align-items: center;
-    padding-top: 7%;
-}
-
 
 .title {
     color: white;
     text-align: center;
     justify-items: center;
-    font-size: 1.6rem;
+    font-size: 2.2rem;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+#boxes1,#boxes2 {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 3%;
+    justify-content: space-between;
+}
+
 .box {
-    background-color: var(--div-bg-color);
-    width: 30%;
+    background-color: var(--page-titles-and-background);
+    width: 25%;
     height: auto;
     text-align: center;
     border-radius: 40px;
 }
+
+#boxes3 {
+    width: 296px;
+    text-align: center;
+    background-color: var(--buttons-color);
+    border-radius: 30px;
+    margin-left: 60px;   
+}
+
+.back {
+    color: white;
+    font-size: 3rem;
+    line-height:90px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+    
+
+.img {
+    width: 40%;
+    height: 60%;
+    align-items: center;
+    padding-top: 7%;
+}
+
 
 /* CONTACT */
 
