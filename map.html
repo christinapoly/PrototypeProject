@@ -8,17 +8,21 @@
 <script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
 <link rel="stylesheet" href="map.css">
 
-  <div id="btn"><a href="index.html" class="btn_class">Back</a></div>
+  <!--a div for the back button-->  
+<div id="btn"><a href="index.html" class="btn_class">Back</a></div>
   
+  <!--this is the div where the map will be added-->
   <div id="map"></div>
 
  
 
   <script>
+    //got the public token from the MapBox Website (this provides access to Mapbox resources )
     mapboxgl.accessToken = 'pk.eyJ1IjoicG9seXpvZ29wIiwiYSI6ImNsb2RleXlndzA3N20yam12b2Y1YWJheDEifQ.lr19uXoW-aPJmyhslL_TcA';
           
       
-      //add the map to #map in the HTML
+      //added the map to #map in the HTML
+      //selected one of the recommended styles for the map, added the coordinates for the center of the map and set the zoom level
       const map = new mapboxgl.Map({
           container: 'map',
           style: 'mapbox://styles/mapbox/outdoors-v12',
@@ -26,9 +30,10 @@
           zoom: 18
       });
 
+      //created a JSON object to store data for each location
       const geojson = {
   type: 'FeatureCollection',
-  features: [
+  features: [ //array
     {
       type: 'Feature',
       geometry: {
@@ -37,7 +42,7 @@
       },
       properties: {
         id: 'bar',
-        title: '<a href="Bar.html" style="color: white;">Bar</a>',
+        title: '<a href="Bar.html" style="color: white;">Bar</a>', //made the title of the location clickable
         description: 'Opening Hours:<br> Thu 21.00 - 05.00 <br> Sat 22.00 - 05.00',
         image: 'images\bar.jpg',
       }
@@ -105,11 +110,14 @@
   ]
 };
 
-// add markers to map
+// add markers to map:
 for (const feature of geojson.features) {
-  // create a HTML element for each feature
+
+  // create a HTML element for each feature(location):
   const el = document.createElement('div');
-  const customClass = `marker-${feature.properties.id}`;
+  
+//create a class for each feature's id, in order to style it in css:
+  const customClass = `marker-${feature.properties.id}`; 
   el.className = `${customClass}`;
 
   // make a marker for each feature and add to the map
@@ -117,13 +125,13 @@ for (const feature of geojson.features) {
   .setLngLat(feature.geometry.coordinates)
 
   .setPopup(
-    new mapboxgl.Popup({ offset: 25 }) // add popups
+    new mapboxgl.Popup({ offset: 25 }) // add popups that contain the title and the description of each feature
       .setHTML(
         `<h3>${feature.properties.title}</h3><p>${feature.properties.description}</p>`
       )
   )
   
-  .addTo(map);
+  .addTo(map); //add everything to the map
 }
 
   </script>
