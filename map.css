@@ -24,8 +24,13 @@ body {
 
 /*Markers*/
 
+:root {
+  --bg-color: rgba(100, 87, 85, 1);
+}
+
 .marker-bar {
-  background-image: url(./images/barr.jpg);
+  background-image: url(./images/Cocktail.png);
+  background-color: var(--bg-color);
   background-size: cover;
   width: 50px;
   height: 50px;
@@ -34,7 +39,8 @@ body {
 }
 
 .marker-gym {
-  background-image: url(./images/gym_map.webp);
+  background-image: url(./images/Dumbbell.png);
+  background-color: var(--bg-color);
   background-size: cover;
   width: 50px;
   height: 50px;
@@ -43,7 +49,8 @@ body {
 }
 
 .marker-music {
-  background-image: url(./images/music_map.webp);
+  background-image: url(./images/Rock\ Music.png);
+  background-color: var(--bg-color);
   background-size: cover;
   width: 50px;
   height: 50px;
@@ -61,7 +68,8 @@ body {
 }
 
 .marker-boardgame {
-  background-image: url(./images/boardgame_map.jpg);
+  background-image: url(./images/Dice.png);
+  background-color: var(--bg-color);
   background-size: cover;
   width: 50px;
   height: 50px;
@@ -70,7 +78,8 @@ body {
 }
 
 .marker-sauna {
-  background-image: url(./images/sauna_map.webp);
+  background-image: url(./images/Frame\ 5.png);
+  background-color: var(--bg-color);
   background-size: cover;
   width: 50px;
   height: 50px;
