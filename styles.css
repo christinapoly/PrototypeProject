@@ -7,15 +7,17 @@ body {
     position: fixed;
     background-size: cover;
 }
-a{
+
+a {
     text-decoration: none;
     color: white;
 }
 
 .header2 {
     height: 100px;
-    /* position: fixed; */
-    /* width: 1920px; */
+    /* z-index: 1000; */
+    position: absolute;
+    width: 1900px;
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -39,13 +41,16 @@ a{
 #fb_qr {
     display: flex;
 }
+
 #fb_qr p {
     font-size: 30px;
     margin-left: 20px;
 }
-.lang_change{
+
+.lang_change {
     display: flex;
 }
+
 .lang_change p {
     font-size: 40px;
 }
@@ -105,13 +110,17 @@ a{
     text-align: center;
     border-radius: 40px;
 }
+
 .box_events p {
     font-size: 20px;
 }
+
 .box_events img {
     width: 500px;
     padding-top: 0;
 }
+
+/* HALLOWEEN */
 
 /* FACILITIES*/
 
@@ -170,7 +179,6 @@ a{
     align-items: center;
     padding-top: 7%;
 }
-
 
 /* CONTACT */
 
