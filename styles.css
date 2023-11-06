@@ -220,6 +220,31 @@ a {
 
 /* CONTACT */
 
-#title_contact {
-    color: red;
+.title_contact_div {
+    color: var(--page-titles-and-background);
+    margin-top: 4%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+}
+
+.caretaker {
+    border: 1px solid red;
+    width: 40%;
+    display: inline-block;
+    font-size: 2.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 5%;
+    padding-bottom: 3%;
+    
+
+}
+
+.contact_info {
+    border: 2px solid blue;
+    width: 40%;
+    float: right;
+    font-size: 2.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 5%;
 }
