@@ -26,9 +26,9 @@ a {
 
 /* COLORS */
 :root {
-    --buttons-color: rgba(100, 87, 85, 0.7);
-    --page-titles-and-background: rgba(135, 126, 124);
     font-family: Arial, Helvetica, sans-serif;
+    --buttons-color: #4A545D;
+    --page-titles-and-background: #4A545D;
 }
 
 /* HEADER */
