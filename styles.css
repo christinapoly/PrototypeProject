@@ -23,8 +23,10 @@ a {
     justify-content: space-between;
 }
 
+
 /* COLORS */
 :root {
+    font-family: Arial, Helvetica, sans-serif;
     --buttons-color: #4A545D;
     --page-titles-and-background: #4A545D;
 }
@@ -121,6 +123,42 @@ a {
 }
 
 /* HALLOWEEN */
+
+#halloween_body {
+    background-image: url(images/halloween_bgr.png);
+}
+
+#halloween_main {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: var(--buttons-color);
+    width: 90%;
+    height: 70%;
+    border-radius: 40px;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+    padding: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 120px;
+    margin-bottom: 30px;
+}
+
+.biggg {
+    font-size: larger;
+    font-weight: bolder;
+}
+
+#title_date {
+    display: flex;
+    justify-content: space-between;
+}
+#title_date h1 {
+    font-size: 100px;
+}
 
 /* FACILITIES*/
 
