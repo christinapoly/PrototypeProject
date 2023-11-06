@@ -25,7 +25,7 @@ body {
 /*Markers*/
 
 :root {
-  --bg-color: rgba(100, 87, 85, 1);
+  --bg-color: #4A545D;
 }
 
 .marker-bar {
