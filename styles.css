@@ -7,46 +7,65 @@ body {
     position: fixed;
     background-size: cover;
 }
-a{
+
+a {
     text-decoration: none;
     color: white;
 }
 
 .header2 {
-    height: 100px;
-    /* position: fixed; */
-    /* width: 1920px; */
-    padding: 10px;
+    height: 120px;
+    /* z-index: 1000; */
+    position: absolute;
+    width: 1800px;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 30px;
 }
+
+
 
 /* COLORS */
 :root {
-    --buttons-color: rgba(100, 87, 85, 0.7);
-    --page-titles-and-background: rgba(135, 126, 124);
+    font-family: Arial, Helvetica, sans-serif;
+    --buttons-color: #4A545D;
+    --page-titles-and-background: #4A545D;
 }
 
 /* HEADER */
 #main_header {
-    height: 100px;
-    /* width: 1920px; */
-    padding: 10px;
+    height: 120px;
+    width: 1800px;
+    padding: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
     display: flex;
     justify-content: space-between;
+    color: var(--buttons-color);
 }
 
 #fb_qr {
     display: flex;
 }
+
 #fb_qr p {
     font-size: 30px;
     margin-left: 20px;
 }
-.lang_change{
+
+.lang_change {
     display: flex;
+    color: var(--buttons-color);
+    align-items: center;
 }
+
 .lang_change p {
+    position: relative;
+    top: 2px;
+    margin-left: 5px;
     font-size: 40px;
 }
 
@@ -105,12 +124,52 @@ a{
     text-align: center;
     border-radius: 40px;
 }
+
 .box_events p {
     font-size: 20px;
 }
+
 .box_events img {
     width: 500px;
     padding-top: 0;
+}
+
+/* HALLOWEEN */
+
+#halloween_body {
+    background-image: url(images/halloween_bgr.png);
+}
+
+#halloween_main {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: var(--buttons-color);
+    width: 90%;
+    height: 70%;
+    border-radius: 40px;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+    padding: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 120px;
+    margin-bottom: 30px;
+}
+
+.biggg {
+    font-size: larger;
+    font-weight: bolder;
+}
+
+#title_date {
+    display: flex;
+    justify-content: space-between;
+}
+#title_date h1 {
+    font-size: 100px;
 }
 
 /* FACILITIES*/
@@ -171,9 +230,29 @@ a{
     padding-top: 7%;
 }
 
-
 /* CONTACT */
 
-#title_contact {
-    color: red;
+.title_contact_div {
+    color: var(--page-titles-and-background);
+    margin-top: 4%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+}
+
+.caretaker {
+    width: 40%;
+    display: inline-block;
+    font-size: 2.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 5%;
+    padding-bottom: 3%;
+}
+
+.contact_info {
+    width: 40%;
+    float: right;
+    font-size: 2.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 5%;
 }
