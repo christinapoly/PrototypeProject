@@ -98,6 +98,7 @@
         <h2>Available times</h2>
       </div>
 
+<<<<<<< Updated upstream
 
       <!-- Times -->
       <div id="timesDiv">
@@ -111,6 +112,28 @@
           <li class="timeListElement" id="time5" onclick="selectTimeToBook('time5')">16:00</li>
           <li class="timeListElement" id="inactiveTime" onclick="selectTimeToBook('time6')">18:00</li>
         </ul>
+=======
+        <!-- Times -->
+        <div id="timesDiv">
+          <ul class="timesList">
+            <li class="timeListElement" id="inactiveTime" onclick="selectTimeToBook('time1')">08:00</li>
+            <li class="timeListElement" id="inactiveTime" onclick="selectTimeToBook('time2')">10:00</li>
+            <li class="timeListElement" id="time3" onclick="selectTimeToBook('time3')">12:00</li>
+          </ul>
+          <ul class="timesList">
+            <li class="timeListElement" id="time4"  onclick="selectTimeToBook('time4')">14:00</li>
+            <li class="timeListElement" id="time5"  onclick="selectTimeToBook('time5')">16:00</li>
+            <li class="timeListElement" id="inactiveTime" onclick="selectTimeToBook('time6')">18:00</li>
+          </ul>
+        </div>
+        <!-- Button -->
+        <div>
+          <div id="scan">Scan your chip to Book</div>
+        </div>
+
+        
+        
+>>>>>>> Stashed changes
       </div>
       <!-- Button -->
       <div>
@@ -121,7 +144,21 @@
   </div>
   </div>
 
+  <div id="popup2">
+    <div>
+      <div class="image-container">
+        <img src="images/Checkmark.png" alt="confirmation">
+      </div>
+    </div>
+    <div>
+      <p id="infoConfirm">You have successfully booked the Music Room!</p>
+      <p id="infoConfirm">Your ID: 38019</p>
+      <p id="infoConfirm">Date: 07.12.2023</p>
+      <p id="infoConfirm">Time: 16:00</p>
+    </div>
+  </div>
 
+<div id="darkScreen"></div>
 
   <script src="js.js"></script>
 </body>
