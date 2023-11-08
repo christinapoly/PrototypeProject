@@ -124,6 +124,11 @@ body {
   height: 100px;
 
   background-color: var(--myBlue);
+  /* bottom: 29px;
+  top: 951px;
+  left:1426px;
+  right:55px; */
+  /* position: absolute; */
   border-radius: 30px;
   font-size: 40px;
   color: white;
@@ -134,13 +139,9 @@ body {
   align-items: center;
   justify-content: center;
 
-<<<<<<< Updated upstream
 
 
 }
-=======
- } 
->>>>>>> Stashed changes
 
 #line1_mainSquare {
   display: flex;
@@ -232,12 +233,7 @@ body {
   background-color: var(--squarecolour);
   color: black;
   box-sizing: border-box;
-<<<<<<< Updated upstream
 
-=======
-  z-index: 3;
-  
->>>>>>> Stashed changes
 }
 
 
@@ -455,18 +451,11 @@ header .icons span :last-child {
 
 
 #popup1 {
-<<<<<<< Updated upstream
   display: none;
   /* Hide the popup by default */
   animation: slide-in 0.5s ease-in-out;
   /* Animation for entrance */
 
-=======
-  display: none; /* Hide the popup by default */
-
-  animation: slide-in 0.5s ease-in-out; /* Animation for entrance */
-  
->>>>>>> Stashed changes
 
 }
 
@@ -492,65 +481,4 @@ header .icons span :last-child {
     transform: translateY(100%);
     /* Move to the bottom */
   }
-<<<<<<< Updated upstream
 };
-=======
-}
-
-#popup2 {
-  justify-content: center;
-  color: white;
-  background-color: var(--myBlue);
-  display: none;
-  width: 1200px;
-  height: 700px; /* Change height to auto to allow dynamic content */
-  font-family: sans-serif;
-  border-radius: 50px;
-  position: fixed;
-  top: 190px;
-  left: 360px;
-  background-color: var(--squarecolour);
-  /* display: flex; */
-  flex-direction: column;
-  text-align: center; /* Center text content */
-  z-index: 5;
-
-  /* Center the checkmark image */
-  img {
-    max-width: 80%; /* Limit the image width to 80% of the container */
-  }
-}
-
-#popup2 div {
-  margin: 10px 0; /* Add space between div elements */
-}
-
-
-#scan
-{
-  font-family: sans-serif;
-  font-size: 30px;
-  background-color: white;
-  color: black;
-  border-radius: 20px;
-  padding: 10px, 5px, 10px, 5px;
-}
-
-#infoConfirm
-{
-  font-size: 30px;
-  font-family: sans-serif;
-}
-
-#darkScreen
-{
-  position: absolute;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: black;
-  opacity: 0.7;
-  display: none;
-  z-index: 2;
-}
->>>>>>> Stashed changes
